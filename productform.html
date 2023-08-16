@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="productform" style="background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00296B; font-size: x-large;">
+        <a class="navbar-brand" href="#"><img src="images/logo.jpeg" width="70" height="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse flex-column align-items-end px-5" id="navbarSupportedContent">
+          <ul class="navbar-nav text-primary font-weight-bold">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="product.html">Products</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="productform.html">Product form<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="signup.html">Accounts</a>
+              </li>
+         </ul>
+        </div>
+      </nav>
+      <form class="product-form justify-content-center pb-5" method="POST" action="productform.html">
+        <div class="container">
+            <div class="row justify-content-center mx-3 my-3 w-100">
+              <div class="col-md-6">
+                <div class="card">
+                  <div class="card-body" style="background-color: #f4d35e;">
+                    <h3 class="card-title text-center" style="font-weight: bolder;">Product Issues Form</h3>
+                    <form class="text-center">
+                    <div>
+                      <div class="col mb-3 pr-auto">
+                        <label for="first_name" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">First Name</label>
+                        <input type="first_name" class="form-control border-rounded" id="first_name" placeholder="Enter first name" required>
+                      </div>
+                      <div class="col mb-3 pr-auto">
+                        <label for="last_name" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Last Name</label>
+                        <input type="last_name" class="form-control border-rounded" id="last_name" placeholder="Enter last name" required>
+                      </div>
+                    </div>
+                      <div class="col mb-3 pr-auto">
+                        <label for="phone_no" class="form-label text-center text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Phone Number</label>
+                        <input type="phone_no" class="form-control border-rounded" id="phone_no" placeholder="Enter phone no" required>
+                      </div>
+                    <div class="col mb-3 text-center">
+                        <label for="email-id" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Email</label>
+                        <input type="email" class="form-control border-rounded" id="email" placeholder="Email id" required>
+                      </div>
+                      <div class="col mb-3 text-center">
+                        <label for="product_description" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Product Description</label>
+                        <textarea class="form-control" rows="5" id="address" placeholder="Type your description here" required></textarea>
+                      </div>
+
+                      <div class="col mb-3">
+                        <label for="new_product_image" class="form-label text-light text-center" style="color: #240046; font-weight: bolder; font-size: 30px;">Image URL</label>
+                          <input type="file" class="form-control pb-5" id="newproductfile">
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-product text-bold btn-primary text-center w-100">SAVE PRODUCT</button>
+                    </form>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </form>
+    
+    
+         <!--boostrap script-->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+     
+</body>
+</html>
