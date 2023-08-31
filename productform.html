@@ -38,42 +38,34 @@
          </ul>
         </div>
       </nav>
-      <form class="product-form justify-content-center pb-5" method="POST" action="productform.html">
+      <form class="product-form justify-content-center pb-5" method="POST" action="productform.html" id="productform">
         <div class="container">
             <div class="row justify-content-center mx-3 my-3 w-100">
               <div class="col-md-6">
                 <div class="card">
                   <div class="card-body" style="background-color: #f4d35e;">
-                    <h3 class="card-title text-center" style="font-weight: bolder;">Product Issues Form</h3>
+                    <h3 class="card-title text-center" style="font-weight: bolder;">Product Form</h3>
                     <form class="text-center">
                     <div>
                       <div class="col mb-3 pr-auto">
-                        <label for="first_name" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">First Name</label>
-                        <input type="first_name" class="form-control border-rounded" id="first_name" placeholder="Enter first name" required>
-                      </div>
-                      <div class="col mb-3 pr-auto">
-                        <label for="last_name" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Last Name</label>
-                        <input type="last_name" class="form-control border-rounded" id="last_name" placeholder="Enter last name" required>
+                        <label for="product_name" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Product Name</label>
+                        <input type="text" class="form-control border-rounded" id="prdt_name" placeholder="Enter Product Name" required>
                       </div>
                     </div>
                       <div class="col mb-3 pr-auto">
-                        <label for="phone_no" class="form-label text-center text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Phone Number</label>
-                        <input type="phone_no" class="form-control border-rounded" id="phone_no" placeholder="Enter phone no" required>
+                        <label for="price" class="form-label text-center text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Price</label>
+                        <input type="text" class="form-control border-rounded" id="price" placeholder="Enter price" required>
                       </div>
-                    <div class="col mb-3 text-center">
-                        <label for="email-id" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Email</label>
-                        <input type="email" class="form-control border-rounded" id="email" placeholder="Email id" required>
+                      <div class="col mb-3">
+                        <label for="new_product_image" class="form-label text-light text-center" style="color: #240046; font-weight: bolder; font-size: 30px;">Image URL</label>
+                          <input type="text" class="form-control pb-5" id="product_image">
+                        </label>
                       </div>
                       <div class="col mb-3 text-center">
                         <label for="product_description" class="form-label text-light" style="color: #240046; font-weight: bolder; font-size: 30px;">Product Description</label>
                         <textarea class="form-control" rows="5" id="address" placeholder="Type your description here" required></textarea>
                       </div>
 
-                      <div class="col mb-3">
-                        <label for="new_product_image" class="form-label text-light text-center" style="color: #240046; font-weight: bolder; font-size: 30px;">Image URL</label>
-                          <input type="file" class="form-control pb-5" id="newproductfile">
-                        </label>
-                      </div>
                       <button type="submit" class="btn btn-product text-bold btn-primary text-center w-100">SAVE PRODUCT</button>
                     </form>
                   </div>

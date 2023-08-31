@@ -27,8 +27,9 @@ html, body{
 
 
 .section1{
-    background-color: #FDC500;
-    background-image: linear-gradient(rgba(0,0,0, 0.9),rgba(0,0,0,0.4)), url('images/pexels-rachel-claire-5531551.jpg');
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url("images\pexels-rachel-claire-5531551.jpg");
+/*        background-image: url('images/pexels-rachel-claire-5531551.jpg');*/
     background-repeat:no-repeat;
     background-position :center;
     background-size:cover;
@@ -166,6 +167,10 @@ html, body{
     display: flex;
     justify-content: center;
   }
+
+  input #search-input{
+    height: 30000px;
+  }
   
   .search-container {
     display: flex;
@@ -174,7 +179,6 @@ html, body{
     padding-left: 80px;
     padding-right: 35px;
     padding-top: 30px;
-    height: 30px;
 }
   
   #search-input {
@@ -191,6 +195,7 @@ html, body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
   }
   
 
